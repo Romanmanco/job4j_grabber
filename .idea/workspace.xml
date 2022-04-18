@@ -25,6 +25,16 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="1. Quartz [#175122] 2" />
+        <option name="rewordedMessage" value="1. Quartz [#175122]" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="e33db1bd164226719335c3fe0c8f56c609522baa" />
+  </component>
   <component name="ProjectId" id="27xuOW6VWuFjctQMas0mHysxVIa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
