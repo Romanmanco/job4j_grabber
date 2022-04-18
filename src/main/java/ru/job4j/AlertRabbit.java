@@ -12,8 +12,10 @@ import static org.quartz.TriggerBuilder.*;
 import static org.quartz.SimpleScheduleBuilder.*;
 
 /**
+ *
  * Начало работы происходит с создания класса управляющего всеми работами.
  * В объект Scheduler мы будем добавлять задачи, которые хотим выполнять периодически.
+ *
  */
 public class AlertRabbit {
     public static void main(String[] args) {
