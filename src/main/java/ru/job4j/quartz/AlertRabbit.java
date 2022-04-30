@@ -69,7 +69,7 @@ public class AlertRabbit {
         Properties properties = new Properties();
         try (InputStream in = AlertRabbit.class
                 .getClassLoader()
-                .getResourceAsStream(".src/main/resources/rabbit.properties")) {
+                .getResourceAsStream("rabbit.properties")) {
             properties.load(in);
         } catch (IOException e) {
             e.printStackTrace();
