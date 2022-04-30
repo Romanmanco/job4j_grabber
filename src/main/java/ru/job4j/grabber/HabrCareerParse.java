@@ -21,11 +21,12 @@ public class HabrCareerParse {
         rows.forEach(row -> {
             Element titleElement = row.select(".vacancy-card__title").first();
             Element linkElement = titleElement.child(0);
-            Element dateElement = row.select(".vacancy-card__date").first();
+            Element dateTitleElement = row.select(".vacancy-card__date").first();
+            Element dateElement = dateTitleElement.child(0);
+            String date = dateElement.attr("datetime");
             String vacancyName = titleElement.text();
             String link = String.format("%s%s", SOURCE_LINK, linkElement.attr("href"));
-            String datePublication = dateElement.text();
-            System.out.printf("%s %s %s%n", vacancyName, link, datePublication);
+            System.out.printf("%s %s %s%n", vacancyName, link, date);
         });
     }
 }
