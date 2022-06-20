@@ -55,11 +55,6 @@ public class AlertRabbit {
             System.out.println("Rabbit runs here ...");
             Connection connection =
                     (Connection) context.getJobDetail().getJobDataMap().get("store");
-//            try (PreparedStatement ps = connection.prepareStatement(
-//                    "insert into rabbit(created_date) values(?);")) {
-//                ps.setTimestamp(1, new Timestamp(System.currentTimeMillis()));
-//                ps.executeUpdate();
-//            }
             try (PreparedStatement statement =
                          connection.prepareStatement("insert into rabbit(created_date) values (?)",
                                  Statement.RETURN_GENERATED_KEYS)) {
